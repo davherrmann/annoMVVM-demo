@@ -24,11 +24,9 @@ public class TestViewModel {
 	}
 
 	@HandlesAction(ChangeCaption.class)
-	public void doChangeCaption(String[] caption) {
+	public void doChangeCaption(String caption, String caption2) {
 		System.out.println("c " + caption);
-		for (String string : caption) {
-			System.out.println(string);
-		}
+		System.out.println("t " + caption2);
 	}
 
 	@AfterVMBinding

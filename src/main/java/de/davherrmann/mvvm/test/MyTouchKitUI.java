@@ -12,6 +12,7 @@ import com.vaadin.ui.Button.ClickEvent;
 
 import de.davherrmann.mvvm.ActionHandler;
 import de.davherrmann.mvvm.ActionWrapper;
+import de.davherrmann.mvvm.SourceWrapper;
 import de.davherrmann.mvvm.State;
 import de.davherrmann.mvvm.StateChangeListener;
 import de.davherrmann.mvvm.StateChangeWrapper;
@@ -39,6 +40,15 @@ public class MyTouchKitUI extends UI {
 										.setValue(value);
 							}
 						};
+					}
+				});
+		
+		viewModelComposer.addSourceWrapper(AbstractField.class,
+				new SourceWrapper<Object>() {
+					@SuppressWarnings("unchecked")
+					@Override
+					public Object get(Object source) {
+						return ((AbstractField<Object>) source).getValue();
 					}
 				});
 
