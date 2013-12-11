@@ -5,7 +5,10 @@ import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.data.Property.ValueChangeNotifier;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.AbstractField;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.UI;
+import com.vaadin.ui.Button.ClickEvent;
 
 import de.davherrmann.mvvm.ActionHandler;
 import de.davherrmann.mvvm.ActionWrapper;
@@ -61,6 +64,20 @@ public class MyTouchKitUI extends UI {
 								});
 					}
 				});
+		
+		viewModelComposer.addActionWrapper(Button.class, new ActionWrapper() {
+			@Override
+			public void addActionHandler(Object notifier, final ActionHandler actionHandler) {
+				((Button) notifier).addClickListener(new ClickListener() {
+					private static final long serialVersionUID = 3154305342571215268L;
+
+					@Override
+					public void buttonClick(ClickEvent event) {
+						actionHandler.handle(event.getButton().getData());
+					}
+				});
+			}
+		});
 		
 		viewModelComposer.addStateChangeWrapper(State.class, new StateChangeWrapper() {
 			@Override
