@@ -1,4 +1,4 @@
-package de.fiducia.mvvm.test.view;
+package de.davherrmann.mvvm.test.view;
 
 import java.util.NoSuchElementException;
 
@@ -9,8 +9,8 @@ import com.vaadin.ui.VerticalLayout;
 import de.davherrmann.mvvm.ViewModelComposer;
 import de.davherrmann.mvvm.annotations.BindAction;
 import de.davherrmann.mvvm.annotations.BindState;
-import de.fiducia.mvvm.test.viewmodel.TestViewModel.ChangeCaption;
-import de.fiducia.mvvm.test.viewmodel.TestViewModel.LoggedInUser;
+import de.davherrmann.mvvm.test.viewmodel.TestViewModel.ChangeCaption;
+import de.davherrmann.mvvm.test.viewmodel.TestViewModel.LoggedInUser;
 
 public class TestView extends VerticalLayout {
 	private static final long serialVersionUID = 2542706496578027047L;

@@ -1,4 +1,4 @@
-package de.fiducia.mvvm.test.viewmodel;
+package de.davherrmann.mvvm.test.viewmodel;
 
 import java.util.Collection;
 

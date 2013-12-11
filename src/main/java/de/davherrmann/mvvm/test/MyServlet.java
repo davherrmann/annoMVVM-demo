@@ -1,4 +1,4 @@
-package de.fiducia.mvvm.test;
+package de.davherrmann.mvvm.test;
 
 import javax.servlet.ServletException;
 

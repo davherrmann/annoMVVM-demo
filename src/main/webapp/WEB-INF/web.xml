@@ -9,13 +9,13 @@
   <servlet>
     <servlet-name>myservlet</servlet-name>
     <servlet-class>
-    	de.fiducia.mvvm.test.MyServlet
+    	de.davherrmann.mvvm.test.MyServlet
     </servlet-class>
 
     <!-- If not using the default widget set-->
     <init-param>
       <param-name>widgetset</param-name>
-      <param-value>de.fiducia.mvvm.test.gwt.AppWidgetSet</param-value>
+      <param-value>de.davherrmann.mvvm.test.gwt.AppWidgetSet</param-value>
     </init-param>
   </servlet>
 

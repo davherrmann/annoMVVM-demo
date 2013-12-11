@@ -1,4 +1,4 @@
-package de.fiducia.mvvm.test;
+package de.davherrmann.mvvm.test;
 
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
@@ -13,8 +13,8 @@ import de.davherrmann.mvvm.State;
 import de.davherrmann.mvvm.StateChangeListener;
 import de.davherrmann.mvvm.StateChangeWrapper;
 import de.davherrmann.mvvm.ViewModelComposer;
-import de.fiducia.mvvm.test.view.TestView;
-import de.fiducia.mvvm.test.viewmodel.TestViewModel;
+import de.davherrmann.mvvm.test.view.TestView;
+import de.davherrmann.mvvm.test.viewmodel.TestViewModel;
 
 public class MyTouchKitUI extends UI {
 	private static final long serialVersionUID = 799973362289793182L;

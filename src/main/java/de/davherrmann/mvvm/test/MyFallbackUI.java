@@ -1,4 +1,4 @@
-package de.fiducia.mvvm.test;
+package de.davherrmann.mvvm.test;
 
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Label;
